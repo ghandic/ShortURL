@@ -12,7 +12,6 @@ class ShortURL(object):
         self.r_db = {}  # Long -> Short
 
         self.max_supported = sum(len(self.chars) ** i for i in range(1, self.max_length + 1))
-
         self.set_short_urls()
 
     def __repr__(self) -> str:
