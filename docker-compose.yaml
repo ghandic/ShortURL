@@ -1,0 +1,11 @@
+version: "2"
+services:
+  shorturl:
+    build: .
+    image: challisa/shorturl
+    container_name: shorturl
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/opt/working
+    entrypoint: sleep 100000
